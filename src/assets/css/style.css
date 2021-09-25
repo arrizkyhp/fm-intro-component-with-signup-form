@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+.text-red {
+  color: #ea5353;
+}
+
+.bg-red {
+  background-color: #ea5353;
+}
+
+.text-cyan {
+  color: #45d3d3;
+}
+
+.bg-cyan {
+  background-color: #45d3d3;
+}
+
+.text-orange {
+  color: #fcaf4a;
+}
+
+.bg-orange {
+  background-color: #fcaf4a;
+}
+
+.text-blue {
+  color: #549ef2;
+}
+
+.bg-blue {
+  background-color: #549ef2;
+}
+
+.text-dark-blue {
+  color: #4c4e61;
+}
+
+.bg-dark-blue {
+  background-color: #4c4e61;
+}
+
+.text-gray-blue {
+  color: #a3a5ae;
+}
+
+.bg-gray-blue {
+  background-color: #a3a5ae;
+}
+
+.text-light-gray {
+  color: #fafafa;
+}
+
+.bg-light-gray {
+  background-color: #fafafa;
+}
+
+html {
+  font-style: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  color: inherit;
+  margin: 0;
+  bottom: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: #fafafa;
+  position: relative;
+}
+
+.card {
+  background-color: salmon;
+}
+
+.hero {
+  color: aqua;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */
