@@ -2,4 +2,10 @@
 
 .hero {
   color: aqua;
+  max-width: rem(511);
+
+  &__text {
+    margin-bottom: rem(30);
+    line-height: rem(58.65);
+  }
 }

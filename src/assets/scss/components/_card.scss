@@ -1,5 +1,30 @@
 @use "../utils" as *;
 
 .card {
-  background-color: salmon;
+  border-radius: rem(10);
+  min-width: rem(556);
+  width: 100%;
+
+  &--info {
+    background-color: $blue;
+    height: rem(65);
+    @include flex-centering();
+    margin-bottom: rem(25);
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.2);
+
+    .info__text {
+      font-weight: 700;
+      // margin: rem(23) auto rem(23) auto;
+
+      span {
+        font-weight: 400;
+      }
+    }
+  }
+
+  &--form {
+    background-color: $white;
+    padding: rem(48);
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.15);
+  }
 }

@@ -3,29 +3,34 @@
 // Colors
 // Primary
 
-$red: hsl(0, 78%, 62%);
-$cyan: hsl(180, 62%, 55%);
-$orange: hsl(34, 97%, 64%);
-$blue: hsl(212, 86%, 64%);
+$red: hsl(0, 100%, 74%);
+$green: hsl(154, 59%, 51%);
+$blue: hsl(248, 32%, 49%);
 
 // Neutral
-$dark-blue: hsl(234, 12%, 34%);
-$gray-blue: hsl(229, 6%, 66%);
-$light-gray: hsl(0, 0%, 98%);
+$white: #ffffff;
+$dark-blue: hsl(249, 10%, 26%);
+$gray-blue: hsl(246, 25%, 77%);
+$dark-gray-blue: hsl(246, 8%, 46%);
 
 // Colors Pallete
 $colors: (
   "red": $red,
-  "cyan": $cyan,
-  "orange": $orange,
+  "green": $green,
   "blue": $blue,
+  "white": $white,
   "dark-blue": $dark-blue,
   "gray-blue": $gray-blue,
-  "light-gray": $light-gray,
+  "dark-gray-blue": $dark-gray-blue,
 );
 
 // Font size
-$base-font-size: rem(15) !default;
+$base-font-size: rem(16) !default;
+$font-size-xs: rem(11) !default;
+$font-size-sm: rem(12) !default;
+$font-size-md: rem(14) !default;
+$font-size-lg: rem(28) !default;
+$font-size-xl: rem(51) !default;
 
 // Border Radius
 $base-border-radius: rem(8) !default;

@@ -1,0 +1,21 @@
+@use "../utils" as *;
+
+.form-group {
+  position: relative;
+  margin-bottom: rem(25);
+
+  .error-icon {
+    &::after {
+      content: url(assets/images/icon-error.svg);
+      position: absolute;
+      top: rem(18);
+      right: rem(28);
+    }
+  }
+
+  .error {
+    text-align: right;
+    margin-top: rem(6);
+    font-style: italic;
+  }
+}

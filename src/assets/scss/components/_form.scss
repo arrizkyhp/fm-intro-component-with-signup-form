@@ -1,0 +1,42 @@
+@use "../utils" as *;
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  .form-control {
+    height: rem(60);
+    border-radius: rem(4);
+  }
+
+  input {
+    padding-left: rem(27);
+    font-family: $base-font;
+    font-weight: 600;
+    color: $dark-blue;
+    font-size: rem(16);
+    width: 100%;
+    border: rem(1) solid $gray-blue;
+
+    &::placeholder {
+      color: $dark-gray-blue;
+    }
+
+    &:focus {
+      outline: rem(1) solid $dark-blue;
+    }
+
+    &.error-message {
+      border: 3px solid $red;
+    }
+  }
+
+  .terms {
+    margin-top: rem(20);
+    text-align: center;
+
+    a {
+      font-weight: 700;
+    }
+  }
+}
