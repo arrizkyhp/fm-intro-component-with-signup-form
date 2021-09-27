@@ -27,9 +27,10 @@ export default function Form() {
             {...register("firstName", {
               required: "First Name cannot be empty",
             })}
+            aria-describedby="firsName_error"
           />
           {errors?.firstName && <span className="error-icon"></span>}
-          {errors?.firstName && <ErrorMessage message={errors.firstName.message} />}
+          {errors?.firstName && <ErrorMessage id={"firsName_error"} message={errors.firstName.message} />}
         </div>
 
         <div className="form-group">
@@ -41,9 +42,10 @@ export default function Form() {
             {...register("lastName", {
               required: "Last Name cannot be empty",
             })}
+            aria-describedby="lastName_error"
           />
           {errors?.lastName && <span className="error-icon"></span>}
-          {errors?.lastName && <ErrorMessage message={errors.lastName.message} />}
+          {errors?.lastName && <ErrorMessage id={"lastName_error"} message={errors.lastName.message} />}
         </div>
 
         <div className="form-group">
@@ -59,9 +61,10 @@ export default function Form() {
                 message: "Looks like this is not an email",
               },
             })}
+            aria-describedby="email_error"
           />
           {errors?.email && <span className="error-icon"></span>}
-          {errors?.email && <ErrorMessage message={errors.email.message} />}
+          {errors?.email && <ErrorMessage id={"email_error"} message={errors.email.message} />}
         </div>
 
         <div className="form-group">
@@ -77,13 +80,14 @@ export default function Form() {
                 message: "Password must have at least 8 characters",
               },
             })}
+            aria-describedby="password_error"
           />
           {errors?.password && <span className="error-icon"></span>}
-          {errors?.password && <ErrorMessage message={errors.password.message} />}
+          {errors?.password && <ErrorMessage id={"password_error"} message={errors.password.message} />}
         </div>
-        {submitted && <p className="success text-dark-red">Thanks for joining us!</p>}
-        <Button isGreen className="form-control fs text-white">
-          claim your free trial
+        {/* {submitted && <p className="success text-dark-red">Thanks for joining us!</p>} */}
+        <Button isGreen className={`form-control fs text-white success ${submitted ? "animate" : ""}`}>
+          {submitted ? "Success" : "claim your free trial"}
         </Button>
         <p className="terms fs-xs text-gray-blue">
           By clicking the button, you are agreeing to our{" "}

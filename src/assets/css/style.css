@@ -204,6 +204,7 @@ form .terms a {
   cursor: pointer;
   text-transform: uppercase;
   font-weight: 600;
+  position: relative;
   -webkit-box-shadow: 0px 4px 1px 1px #2dac75;
           box-shadow: 0px 4px 1px 1px #2dac75;
 }
@@ -218,7 +219,100 @@ form .terms a {
   -webkit-transform: translateY(4px);
           transform: translateY(4px);
 }
+.btn-green.animate {
+  text-indent: -9000px;
+}
+.btn-green.animate::after {
+  position: absolute;
+  content: "";
+  width: 2.1875rem;
+  height: 2.1875rem;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  border-left-color: transparent;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: spin ease-in 2.5s forwards;
+          animation: spin ease-in 2.5s forwards;
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.btn-green.animate.success::before {
+  position: absolute;
+  content: "";
+  width: 2.1875rem;
+  height: 1.09375rem;
+  border: 6px solid #ffffff;
+  border-radius: 10%;
+  border-right: 0;
+  border-top: 0;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-animation: success ease-in 0.15s forwards;
+          animation: success ease-in 0.15s forwards;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
 
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: trnaslate(-50%, -50%) rotate(0deg) scale(1);
+            transform: trnaslate(-50%, -50%) rotate(0deg) scale(1);
+  }
+  90% {
+    -webkit-transform: translate(-50%, -50%) rotate(1080deg) scale(1);
+            transform: translate(-50%, -50%) rotate(1080deg) scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: trnaslate(-50%, -50%) rotate(0deg) scale(1);
+            transform: trnaslate(-50%, -50%) rotate(0deg) scale(1);
+  }
+  90% {
+    -webkit-transform: translate(-50%, -50%) rotate(1080deg) scale(1);
+            transform: translate(-50%, -50%) rotate(1080deg) scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+@-webkit-keyframes success {
+  from {
+    -webkit-transform: translate(-150%, -50%) rotate(0) scale(0);
+            transform: translate(-150%, -50%) rotate(0) scale(0);
+  }
+  to {
+    -webkit-transform: translate(-50%, -50%) rotate(-45deg) scale(1);
+            transform: translate(-50%, -50%) rotate(-45deg) scale(1);
+  }
+}
+@keyframes success {
+  from {
+    -webkit-transform: translate(-150%, -50%) rotate(0) scale(0);
+            transform: translate(-150%, -50%) rotate(0) scale(0);
+  }
+  to {
+    -webkit-transform: translate(-50%, -50%) rotate(-45deg) scale(1);
+            transform: translate(-50%, -50%) rotate(-45deg) scale(1);
+  }
+}
 .form-group {
   position: relative;
   margin-bottom: 1.5625rem;
