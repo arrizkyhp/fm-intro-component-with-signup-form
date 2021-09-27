@@ -1,11 +1,23 @@
 @use "../utils" as *;
 
 .hero {
-  color: aqua;
   max-width: rem(511);
 
   &__text {
     margin-bottom: rem(30);
     line-height: rem(58.65);
+
+    @include breakpoint-max(sm) {
+      margin-bottom: rem(20);
+      font-size: rem(28);
+      line-height: rem(36.4);
+      text-align: center;
+    }
+  }
+
+  &__description {
+    @include breakpoint-max(sm) {
+      text-align: center;
+    }
   }
 }

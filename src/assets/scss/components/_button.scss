@@ -52,7 +52,7 @@
       left: 50%;
       top: 50%;
       // transform: translate((-50%, -50%) rotate(0deg) scale(40));
-      transform: scale(0);
+      transform: rotate(0deg) scale(0);
       animation: success ease-in 0.15s forwards;
       animation-delay: 2.5s;
     }
@@ -73,7 +73,7 @@
 
 @keyframes success {
   from {
-    transform: translate(-150%, -50%) rotate(0) scale(0);
+    transform: translate(-150%, -50%) rotate(0deg) scale(0);
   }
   to {
     transform: translate(-50%, -50%) rotate(-45deg) scale(1);

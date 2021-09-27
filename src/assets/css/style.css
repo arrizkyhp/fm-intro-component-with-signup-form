@@ -139,11 +139,33 @@ body {
 .card--info .info__text span {
   font-weight: 400;
 }
+@media (max-width: 450px) {
+  .card--info {
+    height: 5.5rem;
+    padding: 1.0625rem 3.9375rem;
+    text-align: center;
+  }
+}
 .card--form {
   background-color: #ffffff;
   padding: 3rem;
   -webkit-box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 720px) {
+  .card--form {
+    padding: 1.875rem;
+  }
+}
+@media (max-width: 960px) {
+  .card {
+    min-width: 27.875rem;
+  }
+}
+@media (max-width: 720px) {
+  .card {
+    min-width: 21.625rem;
+  }
 }
 
 form {
@@ -256,8 +278,8 @@ form .terms a {
   border-top: 0;
   left: 50%;
   top: 50%;
-  -webkit-transform: scale(0);
-          transform: scale(0);
+  -webkit-transform: rotate(0deg) scale(0);
+          transform: rotate(0deg) scale(0);
   -webkit-animation: success ease-in 0.15s forwards;
           animation: success ease-in 0.15s forwards;
   -webkit-animation-delay: 2.5s;
@@ -295,8 +317,8 @@ form .terms a {
 }
 @-webkit-keyframes success {
   from {
-    -webkit-transform: translate(-150%, -50%) rotate(0) scale(0);
-            transform: translate(-150%, -50%) rotate(0) scale(0);
+    -webkit-transform: translate(-150%, -50%) rotate(0deg) scale(0);
+            transform: translate(-150%, -50%) rotate(0deg) scale(0);
   }
   to {
     -webkit-transform: translate(-50%, -50%) rotate(-45deg) scale(1);
@@ -305,8 +327,8 @@ form .terms a {
 }
 @keyframes success {
   from {
-    -webkit-transform: translate(-150%, -50%) rotate(0) scale(0);
-            transform: translate(-150%, -50%) rotate(0) scale(0);
+    -webkit-transform: translate(-150%, -50%) rotate(0deg) scale(0);
+            transform: translate(-150%, -50%) rotate(0deg) scale(0);
   }
   to {
     -webkit-transform: translate(-50%, -50%) rotate(-45deg) scale(1);
@@ -330,12 +352,36 @@ form .terms a {
 }
 
 .hero {
-  color: aqua;
   max-width: 31.9375rem;
 }
 .hero__text {
   margin-bottom: 1.875rem;
   line-height: 3.665625rem;
+}
+@media (max-width: 450px) {
+  .hero__text {
+    margin-bottom: 1.25rem;
+    font-size: 1.75rem;
+    line-height: 2.275rem;
+    text-align: center;
+  }
+}
+@media (max-width: 450px) {
+  .hero__description {
+    text-align: center;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.attribution a {
+  color: #3e52a3;
 }
 
 main {
@@ -350,5 +396,26 @@ main {
           align-items: center;
   min-height: 100vh;
   gap: 4.375rem;
+}
+@media (max-width: 960px) {
+  main {
+    margin: 0 1.25rem;
+    gap: 3.125rem;
+  }
+}
+@media (max-width: 720px) {
+  main {
+    padding: 1.875rem;
+    gap: 2.5rem;
+  }
+}
+@media (max-width: 450px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 5.625rem 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -20,11 +20,29 @@
         font-weight: 400;
       }
     }
+
+    @include breakpoint-max(sm) {
+      height: rem(88);
+      padding: rem(17) rem(63);
+      text-align: center;
+    }
   }
 
   &--form {
     background-color: $white;
     padding: rem(48);
     box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.15);
+
+    @include breakpoint-max(md) {
+      padding: rem(30);
+    }
+  }
+
+  @include breakpoint-max(lg) {
+    min-width: rem(446);
+  }
+
+  @include breakpoint-max(md) {
+    min-width: rem(346);
   }
 }
