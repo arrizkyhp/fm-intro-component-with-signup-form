@@ -18,4 +18,8 @@
     margin-top: rem(6);
     font-style: italic;
   }
+
+  @include breakpoint-max(sm) {
+    margin-bottom: rem(15);
+  }
 }

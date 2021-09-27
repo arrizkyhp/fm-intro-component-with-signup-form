@@ -111,6 +111,11 @@ body {
   font-family: "Poppins", sans-serif;
   position: relative;
 }
+@media (max-width: 450px) {
+  body {
+    background: url(assets/images/bg-intro-mobile.png) #ff7a7a;
+  }
+}
 
 .card {
   border-radius: 0.625rem;
@@ -154,7 +159,7 @@ body {
 }
 @media (max-width: 720px) {
   .card--form {
-    padding: 1.875rem;
+    padding: 1.5625rem;
   }
 }
 @media (max-width: 960px) {
@@ -165,6 +170,11 @@ body {
 @media (max-width: 720px) {
   .card {
     min-width: 21.625rem;
+  }
+}
+@media (max-width: 450px) {
+  .card {
+    min-width: 19.6875rem;
   }
 }
 
@@ -350,6 +360,11 @@ form .terms a {
   margin-top: 0.375rem;
   font-style: italic;
 }
+@media (max-width: 450px) {
+  .form-group {
+    margin-bottom: 0.9375rem;
+  }
+}
 
 .hero {
   max-width: 31.9375rem;
@@ -415,7 +430,7 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 5.625rem 0;
+    padding: 4.375rem 0 5.625rem 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

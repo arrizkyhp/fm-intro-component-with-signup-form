@@ -29,4 +29,8 @@ body {
   background: url(assets/images/bg-intro-desktop.png) $red;
   font-family: $base-font;
   position: relative;
+
+  @include breakpoint-max(sm) {
+    background: url(assets/images/bg-intro-mobile.png) $red;
+  }
 }

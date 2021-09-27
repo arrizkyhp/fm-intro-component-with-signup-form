@@ -17,6 +17,6 @@ main {
 
   @include breakpoint-max(sm) {
     flex-direction: column;
-    padding: rem(90) 0;
+    padding: rem(70) 0 rem(90) 0;
   }
 }
