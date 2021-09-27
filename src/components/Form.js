@@ -27,7 +27,7 @@ export default function Form() {
             {...register("firstName", {
               required: "First Name cannot be empty",
             })}
-            aria-describedby="firsName_error"
+            aria-label="First Name"
           />
           {errors?.firstName && <span className="error-icon"></span>}
           {errors?.firstName && <ErrorMessage id={"firsName_error"} message={errors.firstName.message} />}
@@ -42,7 +42,7 @@ export default function Form() {
             {...register("lastName", {
               required: "Last Name cannot be empty",
             })}
-            aria-describedby="lastName_error"
+            aria-label="Last Name"
           />
           {errors?.lastName && <span className="error-icon"></span>}
           {errors?.lastName && <ErrorMessage id={"lastName_error"} message={errors.lastName.message} />}
@@ -61,7 +61,7 @@ export default function Form() {
                 message: "Looks like this is not an email",
               },
             })}
-            aria-describedby="email_error"
+            aria-label="Email"
           />
           {errors?.email && <span className="error-icon"></span>}
           {errors?.email && <ErrorMessage id={"email_error"} message={errors.email.message} />}
@@ -80,7 +80,7 @@ export default function Form() {
                 message: "Password must have at least 8 characters",
               },
             })}
-            aria-describedby="password_error"
+            aria-label="Password"
           />
           {errors?.password && <span className="error-icon"></span>}
           {errors?.password && <ErrorMessage id={"password_error"} message={errors.password.message} />}

@@ -6,7 +6,7 @@ export default function Register() {
     return (
       <section className="register">
         <Card isPurple>
-          <p className="info__text fs text-white">Try it free 7 days <span>then $20/mo. thereafter</span></p>
+          <h1 className="info__text fs text-white">Try it free 7 days <span>then $20/mo. thereafter</span></h1>
         </Card>
 
         <Card isWhite>
